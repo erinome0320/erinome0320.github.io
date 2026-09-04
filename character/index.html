@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>キャラクター | いざよいのいざない</title>
+<style>
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    background-color: #0e0e0e;
+    color: #e8e8e8;
+    font-family: "Hiragino Mincho ProN", "Yu Mincho", serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.8;
+  }
+  header {
+    text-align: center;
+    padding: 50px 20px 20px;
+    border-bottom: 1px solid #333;
+  }
+  header h1 {
+    font-size: 18px;
+    letter-spacing: 3px;
+    margin: 0 0 8px;
+  }
+  header a.back {
+    font-size: 12px;
+    color: #777;
+    text-decoration: none;
+  }
+  header a.back:hover {
+    color: #a8c8ec;
+  }
+  main {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 50px 20px;
+  }
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 18px;
+  }
+  .card {
+    display: block;
+    background-color: #1a1a1a;
+    border: 1px solid #2a2a2a;
+    padding: 14px;
+    text-align: center;
+    text-decoration: none;
+    color: #e8e8e8;
+  }
+  .card:hover {
+    border-color: #a8c8ec;
+  }
+  .card img {
+    width: 100%;
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
+    background-color: #333;
+    margin-bottom: 10px;
+  }
+  .card .name {
+    font-size: 14px;
+    letter-spacing: 1px;
+  }
+  footer {
+    text-align: center;
+    padding: 30px 20px;
+    font-size: 12px;
+    color: #666;
+    border-top: 1px solid #333;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>キャラクター</h1>
+  <a class="back" href="../index.html">← トップに戻る</a>
+</header>
+
+<main>
+  <div class="card-grid">
+    <a class="card" href="belmira.html">
+      <img src="../images/characters/belmira_thumb.jpg" alt="ベルミラ">
+      <div class="name">ベルミラ</div>
+    </a>
+    <a class="card" href="kyle.html">
+      <img src="../images/characters/kyle_thumb.jpg" alt="カイル">
+      <div class="name">カイル</div>
+    </a>
+    <a class="card" href="morrow.html">
+      <img src="../images/characters/morrow_thumb.jpg" alt="モロウ">
+      <div class="name">モロウ</div>
+    </a>
+    <a class="card" href="ru.html">
+      <img src="../images/characters/ru_thumb.jpg" alt="ルー">
+      <div class="name">ルー</div>
+    </a>
+  </div>
+</main>
+
+<footer>
+  &copy; 2026 Erinome
+</footer>
+
+</body>
+</html>
