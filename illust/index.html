@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>イラスト | いざよいのいざない</title>
+<style>
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    background-color: #0e0e0e;
+    color: #e8e8e8;
+    font-family: "Hiragino Mincho ProN", "Yu Mincho", serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.8;
+  }
+  header {
+    text-align: center;
+    padding: 50px 20px 20px;
+    border-bottom: 1px solid #333;
+  }
+  header h1 {
+    font-size: 18px;
+    letter-spacing: 3px;
+    margin: 0 0 8px;
+  }
+  header a.back {
+    font-size: 12px;
+    color: #777;
+    text-decoration: none;
+  }
+  header a.back:hover {
+    color: #a8c8ec;
+  }
+  main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 50px 20px 80px;
+  }
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 12px;
+  }
+  .gallery-item {
+    display: block;
+    background-color: #1a1a1a;
+    border: 1px solid #2a2a2a;
+    overflow: hidden;
+    text-decoration: none;
+  }
+  .gallery-item img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    display: block;
+  }
+  footer {
+    text-align: center;
+    padding: 30px 20px;
+    font-size: 12px;
+    color: #666;
+    border-top: 1px solid #333;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>イラスト</h1>
+  <a class="back" href="../index.html">← トップに戻る</a>
+</header>
+
+<main>
+  <div class="gallery-grid">
+    <a class="gallery-item" href="001.html">
+      <img src="../images/illust/001_thumb.jpg" alt="イラスト1">
+    </a>
+    <!-- 増やすときはこのaタグをコピーして使う -->
+  </div>
+</main>
+
+<footer>
+  &copy; 2026 Erinome
+</footer>
+
+</body>
+</html>
