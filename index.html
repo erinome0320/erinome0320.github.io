@@ -31,33 +31,13 @@
     color: #999;
     margin: 0;
   }
-  nav {
-    text-align: center;
-    padding: 20px 0;
-    border-bottom: 1px solid #333;
-  }
-  nav a {
-    color: #a8c8ec;
-    text-decoration: none;
-    margin: 0 14px;
-    font-size: 14px;
-  }
-  nav a:hover {
-    text-decoration: underline;
-  }
   main {
-    max-width: 700px;
+    max-width: 600px;
     margin: 0 auto;
-    padding: 40px 20px;
+    padding: 60px 20px;
   }
   section {
-    margin-bottom: 60px;
-  }
-  section h2 {
-    font-size: 16px;
-    border-left: 3px solid #a8c8ec;
-    padding-left: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
   }
   .notice {
     background-color: #1a1a1a;
@@ -65,55 +45,30 @@
     padding: 20px;
     font-size: 13px;
     color: #bbb;
+    margin-bottom: 60px;
   }
   .notice p {
     margin: 6px 0;
   }
-  .card-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
-    gap: 16px;
+  .link-list {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
   }
-  .card {
+  .link-card {
+    display: block;
     background-color: #1a1a1a;
     border: 1px solid #2a2a2a;
-    padding: 10px;
+    padding: 22px;
     text-align: center;
     text-decoration: none;
     color: #e8e8e8;
+    font-size: 15px;
+    letter-spacing: 2px;
   }
-  .card img {
-    width: 100%;
-    aspect-ratio: 1 / 1;
-    object-fit: cover;
-    background-color: #333;
-    margin-bottom: 8px;
-  }
-  .card .name {
-    font-size: 13px;
-  }
-  .story-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  .story-list li {
-    border-bottom: 1px solid #2a2a2a;
-    padding: 12px 0;
-  }
-  .story-list a {
-    color: #e8e8e8;
-    text-decoration: none;
-    font-size: 14px;
-  }
-  .story-list a:hover {
+  .link-card:hover {
+    border-color: #a8c8ec;
     color: #a8c8ec;
-  }
-  .story-list .date {
-    font-size: 11px;
-    color: #777;
-    display: block;
-    margin-top: 4px;
   }
   footer {
     text-align: center;
@@ -127,21 +82,13 @@
 <body>
 
 <header>
-  <h1>ゆっくりの部屋</h1>
-  <p>一次創作(ルー、ベルミラ、カイル、モロウ)のイラスト・小説置き場</p>
+  <h1>いざよいのいざない</h1>
+  <p>Erinomeの一次創作置き場</p>
 </header>
-
-<nav>
-  <a href="#notice">このサイトについて</a>
-  <a href="#characters">キャラクター</a>
-  <a href="#illust">イラスト</a>
-  <a href="#story">ストーリー</a>
-</nav>
 
 <main>
 
   <section id="notice">
-    <h2>このサイトについて</h2>
     <div class="notice">
       <p>当サイトに掲載しているイラスト・文章はすべて自作の創作物です。</p>
       <p>無断転載・無断使用・改変を禁止します。</p>
@@ -150,53 +97,13 @@
     </div>
   </section>
 
-  <section id="characters">
-    <h2>キャラクター</h2>
-    <div class="card-grid">
-      <a class="card" href="character/ru.html">
-        <img src="images/characters/ru_thumb.jpg" alt="ルー">
-        <div class="name">ルー</div>
-      </a>
-      <a class="card" href="character/belmira.html">
-        <img src="images/characters/belmira_thumb.jpg" alt="ベルミラ">
-        <div class="name">ベルミラ</div>
-      </a>
-      <a class="card" href="character/kyle.html">
-        <img src="images/characters/kyle_thumb.jpg" alt="カイル">
-        <div class="name">カイル</div>
-      </a>
-      <a class="card" href="character/morrow.html">
-        <img src="images/characters/morrow_thumb.jpg" alt="モロウ">
-        <div class="name">モロウ</div>
-      </a>
+  <section id="links">
+    <div class="link-list">
+      <a class="link-card" href="character/index.html">キャラクター</a>
+      <a class="link-card" href="illust/index.html">イラスト</a>
+      <a class="link-card" href="story/index.html">ストーリー</a>
+      <a class="link-card" href="message.html">メッセージ</a>
     </div>
-  </section>
-
-  <section id="illust">
-    <h2>イラスト</h2>
-    <div class="card-grid">
-      <a class="card" href="illust/001.html">
-        <img src="images/illust/001_thumb.jpg" alt="イラスト1">
-      </a>
-      <!-- 増やすときはこのカードをコピーして使う -->
-    </div>
-  </section>
-
-  <section id="story">
-    <h2>ストーリー</h2>
-    <ul class="story-list">
-      <li>
-        <a href="story/001.html">第1話 タイトル未定</a>
-        <span class="date">2026.09.04</span>
-      </li>
-      <!-- 増やすときはこのliをコピーして使う -->
-    </ul>
-  </section>
-
-  <section id="message">
-    <h2>メッセージ</h2>
-    <p style="font-size:13px; color:#999;">感想・お便りはこちらからどうぞ(匿名OK)</p>
-    <!-- ここにマシュマロの埋め込みコードを貼る -->
   </section>
 
 </main>
