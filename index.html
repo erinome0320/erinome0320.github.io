@@ -9,114 +9,122 @@
     box-sizing: border-box;
   }
   body {
-    background-color: #0e0e0e;
-    color: #e8e8e8;
-    font-family: "Hiragino Mincho ProN", "Yu Mincho", serif;
+    background-color: #f7f4ec;
+    color: #3d3468;
+    font-family: Georgia, "Hiragino Mincho ProN", "Yu Mincho", serif;
     margin: 0;
     padding: 0;
-    line-height: 1.8;
-  }
-  header {
-    text-align: center;
-    padding: 60px 20px 30px;
-    border-bottom: 1px solid #333;
-  }
-  header h1 {
-    font-size: 22px;
-    letter-spacing: 4px;
-    margin: 0 0 10px;
-  }
-  header h1 img {
-    max-width: 280px;
-    width: 100%;
-    height: auto;
-  }
-  header p {
-    font-size: 13px;
-    color: #999;
-    margin: 0;
+    line-height: 1.9;
   }
   main {
-    max-width: 600px;
+    max-width: 420px;
     margin: 0 auto;
-    padding: 60px 20px;
+    padding: 60px 24px 80px;
   }
-  section {
-    margin-bottom: 50px;
+  .emblem {
+    display: block;
+    margin: 0 auto 20px;
+  }
+  .site-name {
+    text-align: center;
+    margin-bottom: 6px;
+  }
+  .site-name .pill {
+    display: inline-block;
+    border: 1px solid #3d3468;
+    border-radius: 40px;
+    padding: 6px 22px;
+  }
+  .site-name .pill span {
+    font-style: italic;
+    font-size: 19px;
+    letter-spacing: 1px;
+  }
+  .subtitle {
+    text-align: center;
+    font-size: 11px;
+    color: #6f6690;
+    letter-spacing: 1px;
+    margin: 10px 0 40px;
   }
   .notice {
-    background-color: #1a1a1a;
-    border: 1px solid #333;
-    padding: 20px;
-    font-size: 13px;
-    color: #bbb;
-    margin-bottom: 60px;
+    font-size: 12px;
+    color: #5c5480;
+    line-height: 1.9;
+    margin-bottom: 40px;
   }
-  .notice p {
-    margin: 6px 0;
+  .contents-label {
+    font-style: italic;
+    font-size: 15px;
+    margin-bottom: 14px;
   }
   .link-list {
+    font-size: 14px;
+    line-height: 2.6;
+  }
+  .link-list .row {
     display: flex;
-    flex-direction: column;
-    gap: 14px;
+    align-items: baseline;
   }
-  .link-card {
-    display: block;
-    background-color: #1a1a1a;
-    border: 1px solid #2a2a2a;
-    padding: 22px;
-    text-align: center;
-    text-decoration: none;
-    color: #e8e8e8;
-    font-size: 15px;
-    letter-spacing: 2px;
+  .link-list a {
+    color: #3d3468;
+    text-decoration: underline;
+    text-underline-offset: 3px;
   }
-  .link-card:hover {
-    border-color: #a8c8ec;
-    color: #a8c8ec;
+  .link-list .dots {
+    flex: 1;
+    border-bottom: 1px dotted #a49bc4;
+    margin: 0 8px;
+    transform: translateY(-4px);
   }
   footer {
     text-align: center;
-    padding: 30px 20px;
-    font-size: 12px;
-    color: #666;
-    border-top: 1px solid #333;
+    margin-top: 50px;
+    font-size: 10px;
+    color: #a49bc4;
   }
 </style>
 </head>
 <body>
 
-<header>
-  <h1><img src="images/title.png" alt="いざよいのいざない"></h1>
-  <p>Erinomeの一次創作置き場</p>
-</header>
-
 <main>
 
-  <section id="notice">
-    <div class="notice">
-      <p>当サイトに掲載しているイラスト・文章はすべて自作の創作物です。</p>
-      <p>無断転載・無断使用・改変を禁止します。</p>
-      <p>生成AIの学習データとしての利用も禁止します。</p>
-      <p>二次創作・感想等は歓迎ですが、事前にご一報いただけると嬉しいです。</p>
-    </div>
-  </section>
+  <svg class="emblem" width="140" height="170" viewBox="0 0 140 170">
+    <path d="M10,170 L10,60 A60,60 0 0,1 130,60 L130,170" fill="none" stroke="#3d3468" stroke-width="1"/>
+    <circle cx="70" cy="55" r="16" fill="none" stroke="#3d3468" stroke-width="1"/>
+    <path d="M64,45 a14,14 0 1,0 2,20 a11,11 0 1,1 -2,-20 Z" fill="#3d3468"/>
+    <circle cx="30" cy="30" r="1" fill="#3d3468"/>
+    <circle cx="105" cy="35" r="1" fill="#3d3468"/>
+    <circle cx="45" cy="20" r="0.8" fill="#3d3468"/>
+    <circle cx="95" cy="20" r="0.8" fill="#3d3468"/>
+    <path d="M25,26 l3,0 M26.5,24.5 l0,3" stroke="#3d3468" stroke-width="0.8"/>
+    <path d="M110,42 l3,0 M111.5,40.5 l0,3" stroke="#3d3468" stroke-width="0.8"/>
+    <path d="M70,80 L70,150" stroke="#3d3468" stroke-width="0.7" opacity="0.5"/>
+    <path d="M55,95 Q70,105 85,95" stroke="#3d3468" stroke-width="0.7" fill="none" opacity="0.5"/>
+    <path d="M55,120 Q70,130 85,120" stroke="#3d3468" stroke-width="0.7" fill="none" opacity="0.5"/>
+  </svg>
 
-  <section id="links">
-    <div class="link-list">
-      <a class="link-card" href="character/index.html">キャラクター</a>
-      <a class="link-card" href="illust/index.html">イラスト</a>
-      <a class="link-card" href="story/index.html">ストーリー</a>
-      <a class="link-card" href="https://marshmallow-qa.com/xz77fn3s589q9gn?t=nNQq2s&utm_medium=url_text&utm_source=promotion">メッセージ</a>
-      <a class="link-card" href="https://sizu.me/menoe">日記</a>
-     </div>
-  </section>
+  <div class="site-name">
+    <div class="pill"><span>いざよいのいざない</span></div>
+  </div>
+  <div class="subtitle">Erinome's night-bound archive</div>
+
+  <div class="notice">
+    当サイトに掲載しているイラスト・文章はすべて自作の創作物です。無断転載・無断使用・改変を禁止します。生成AIの学習データとしての利用も禁止します。二次創作・感想等は歓迎ですが、事前にご一報いただけると嬉しいです。
+  </div>
+
+  <div class="contents-label">Contents</div>
+  <div class="link-list">
+    <div class="row"><a href="character/index.html">住人</a><span class="dots"></span></div>
+    <div class="row"><a href="illust/index.html">画帖</a><span class="dots"></span></div>
+    <div class="row"><a href="story/index.html">夜話</a><span class="dots"></span></div>
+    <div class="row"><a href="https://marshmallow-qa.com/xz77fn3s589q9gn?t=nNQq2s&utm_medium=url_text&utm_source=promotion">言伝</a><span class="dots"></span></div>
+    <div class="row"><a href="https://sizu.me/menoe">日記</a><span class="dots"></span></div>
+  </div>
 
 </main>
 
-<footer>
-  &copy; 2026 Erinome
-</footer>
+<footer>&copy; 2026 Erinome</footer>
 
 </body>
 </html>
