@@ -3,116 +3,94 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>イラスト | いざよいのいざない</title>
+<title>画帖 | いざよいのいざない</title>
 <style>
   * {
     box-sizing: border-box;
   }
   body {
-    background-color: #0e0e0e;
-    color: #e8e8e8;
-    font-family: "Hiragino Mincho ProN", "Yu Mincho", serif;
+    background-color: #f7f4ec;
+    color: #3d3468;
+    font-family: Georgia, "Hiragino Mincho ProN", "Yu Mincho", serif;
     margin: 0;
     padding: 0;
-    line-height: 1.8;
-  }
-  header {
-    text-align: center;
-    padding: 50px 20px 20px;
-    border-bottom: 1px solid #333;
-  }
-  header h1 {
-    font-size: 18px;
-    letter-spacing: 3px;
-    margin: 0 0 8px;
-  }
-  header a.back {
-    font-size: 12px;
-    color: #777;
-    text-decoration: none;
-  }
-  header a.back:hover {
-    color: #a8c8ec;
+    line-height: 1.9;
   }
   main {
-    max-width: 800px;
+    max-width: 600px;
     margin: 0 auto;
-    padding: 50px 20px 80px;
+    padding: 50px 24px 80px;
+  }
+  .back {
+    display: block;
+    text-align: center;
+    font-size: 11px;
+    color: #6f6690;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    margin-bottom: 24px;
+  }
+  .page-title {
+    text-align: center;
+    font-style: italic;
+    font-size: 19px;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
   }
   .gallery-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
-    gap: 12px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
   }
   .gallery-item {
     display: block;
-    background-color: #1a1a1a;
-    border: 1px solid #2a2a2a;
+    aspect-ratio: 1 / 1;
+    border: 1px solid #3d3468;
+    border-radius: 2px;
     overflow: hidden;
-    text-decoration: none;
+    background-color: #f0ecdf;
   }
   .gallery-item img {
     width: 100%;
-    aspect-ratio: 1 / 1;
+    height: 100%;
     object-fit: cover;
     display: block;
   }
   footer {
     text-align: center;
-    padding: 30px 20px;
-    font-size: 12px;
-    color: #666;
-    border-top: 1px solid #333;
-  }
-  .hidden-link {
-    display: block;
-    text-align: center;
-    padding-bottom: 20px;
+    margin-top: 50px;
     font-size: 10px;
-    color: #333;
-    text-decoration: none;
-  }
-  .hidden-link:hover {
-    color: #555;
+    color: #a49bc4;
   }
 </style>
 </head>
 <body>
 
-<header>
-  <h1>イラスト</h1>
-  <a class="back" href="../index.html">← トップに戻る</a>
-</header>
-
 <main>
+
+  <a class="back" href="../index.html">&larr; いざよいのいざない</a>
+
+  <div class="page-title">画帖</div>
+
   <div class="gallery-grid">
     <a class="gallery-item" href="001.html">
-      <img src="../illust/001.jpg" alt="イラスト1">
+      <img src="../images/illust/001.jpg" alt="イラスト1">
     </a>
     <a class="gallery-item" href="002.html">
-      <img src="../illust/002.jpg" alt="イラスト2">
+      <img src="../images/illust/002.jpg" alt="イラスト2">
     </a>
     <a class="gallery-item" href="003.html">
-      <img src="../illust/003.jpg" alt="イラスト3">
+      <img src="../images/illust/003.jpg" alt="イラスト3">
     </a>
     <a class="gallery-item" href="004.html">
-      <img src="../illust/004.jpg" alt="イラスト4">
-    </a>
-    <a class="gallery-item" href="005.html">
-      <img src="../illust/005.jpg" alt="イラスト5">
-    </a>
-    <a class="gallery-item" href="006.html">
-      <img src="../illust/006.jpg" alt="イラスト6">
+      <img src="../images/illust/004.jpg" alt="イラスト4">
     </a>
     <!-- 増やすときはこのaタグをコピーして使う -->
   </div>
+
 </main>
 
-<footer>
-  &copy; 2026 Erinome
-</footer>
-
-<a class="hidden-link" href="hidden/index.html">ひみつ</a>
+<footer>&copy; 2026 Erinome</footer>
 
 </body>
 </html>
