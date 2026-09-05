@@ -9,38 +9,35 @@
     box-sizing: border-box;
   }
   body {
-    background-color: #0e0e0e;
-    color: #e8e8e8;
-    font-family: "Hiragino Mincho ProN", "Yu Mincho", serif;
+    background-color: #f7f4ec;
+    color: #3d3468;
+    font-family: Georgia, "Hiragino Mincho ProN", "Yu Mincho", serif;
     margin: 0;
     padding: 0;
     line-height: 1.9;
   }
-  header {
-    text-align: center;
-    padding: 50px 20px 20px;
-    border-bottom: 1px solid #333;
-  }
-  header a.back {
-    font-size: 12px;
-    color: #777;
-    text-decoration: none;
-  }
-  header a.back:hover {
-    color: #a8c8ec;
-  }
   main {
-    max-width: 640px;
+    max-width: 480px;
     margin: 0 auto;
-    padding: 50px 20px 80px;
+    padding: 50px 24px 80px;
+  }
+  .back {
+    display: block;
+    text-align: center;
+    font-size: 11px;
+    color: #6f6690;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    margin-bottom: 30px;
   }
   .profile-image {
     width: 100%;
     aspect-ratio: 3 / 4;
-    background-color: #1a1a1a;
-    border: 1px solid #2a2a2a;
-    margin-bottom: 30px;
+    border: 1px solid #3d3468;
+    border-radius: 2px;
     overflow: hidden;
+    background-color: #f0ecdf;
+    margin-bottom: 26px;
   }
   .profile-image img {
     width: 100%;
@@ -50,59 +47,60 @@
   }
   .name-block {
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 44px;
   }
   .name-block .name {
-    font-size: 24px;
-    letter-spacing: 3px;
+    font-style: italic;
+    font-size: 22px;
+    letter-spacing: 1px;
   }
   .name-block .kana {
-    font-size: 12px;
-    color: #888;
+    font-size: 11px;
+    color: #8a80ab;
     margin-top: 6px;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
   }
   .name-block .tag {
     display: inline-block;
     margin-top: 14px;
-    font-size: 12px;
-    color: #a8c8ec;
-    border: 1px solid #2a4a5a;
-    padding: 4px 12px;
+    font-size: 11px;
+    color: #3d3468;
+    border: 1px solid #3d3468;
+    border-radius: 20px;
+    padding: 4px 14px;
     letter-spacing: 1px;
   }
   section {
-    margin-bottom: 40px;
+    margin-bottom: 36px;
   }
   section h2 {
+    font-style: italic;
+    font-weight: normal;
     font-size: 14px;
-    color: #a8c8ec;
-    border-left: 3px solid #a8c8ec;
-    padding-left: 10px;
+    color: #6f6690;
+    border-bottom: 1px dotted #c9c0e0;
+    padding-bottom: 8px;
     margin-bottom: 16px;
     letter-spacing: 1px;
   }
   section p {
     font-size: 14px;
-    color: #ddd;
+    color: #4a4270;
     margin: 0 0 14px;
   }
   footer {
     text-align: center;
-    padding: 30px 20px;
-    font-size: 12px;
-    color: #666;
-    border-top: 1px solid #333;
+    margin-top: 30px;
+    font-size: 10px;
+    color: #a49bc4;
   }
 </style>
 </head>
 <body>
 
-<header>
-  <a class="back" href="index.html">← キャラクター一覧に戻る</a>
-</header>
-
 <main>
+
+  <a class="back" href="index.html">&larr; 住人一覧に戻る</a>
 
   <div class="profile-image">
     <img src="../images/characters/kyle_thumb.jpg" alt="カイル">
@@ -143,9 +141,7 @@
 
 </main>
 
-<footer>
-  &copy; 2026 Erinome
-</footer>
+<footer>&copy; 2026 Erinome</footer>
 
 </body>
 </html>
