@@ -3,105 +3,108 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ストーリー | いざよいのいざない</title>
+<title>夜話 | いざよいのいざない</title>
 <style>
   * {
     box-sizing: border-box;
   }
   body {
-    background-color: #0e0e0e;
-    color: #e8e8e8;
-    font-family: "Hiragino Mincho ProN", "Yu Mincho", serif;
+    background-color: #f7f4ec;
+    color: #3d3468;
+    font-family: Georgia, "Hiragino Mincho ProN", "Yu Mincho", serif;
     margin: 0;
     padding: 0;
-    line-height: 1.8;
-  }
-  header {
-    text-align: center;
-    padding: 50px 20px 20px;
-    border-bottom: 1px solid #333;
-  }
-  header h1 {
-    font-size: 18px;
-    letter-spacing: 3px;
-    margin: 0 0 8px;
-  }
-  header a.back {
-    font-size: 12px;
-    color: #777;
-    text-decoration: none;
-  }
-  header a.back:hover {
-    color: #a8c8ec;
+    line-height: 1.9;
   }
   main {
-    max-width: 640px;
+    max-width: 480px;
     margin: 0 auto;
-    padding: 50px 20px 80px;
+    padding: 50px 24px 80px;
+  }
+  .back {
+    display: block;
+    text-align: center;
+    font-size: 11px;
+    color: #6f6690;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    margin-bottom: 24px;
+  }
+  .page-title {
+    text-align: center;
+    font-style: italic;
+    font-size: 19px;
+    letter-spacing: 1px;
+    margin-bottom: 34px;
   }
   .story-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
   }
-  .story-list li {
-    border-bottom: 1px solid #2a2a2a;
-  }
-  .story-list a {
+  .story-item {
     display: block;
-    padding: 20px 8px;
-    color: #e8e8e8;
     text-decoration: none;
+    color: #3d3468;
   }
-  .story-list a:hover {
-    color: #a8c8ec;
+  .story-item .row {
+    display: flex;
+    align-items: baseline;
   }
-  .story-list .title {
+  .story-item .title {
+    font-style: italic;
     font-size: 15px;
-    letter-spacing: 1px;
-    margin-bottom: 6px;
+    white-space: nowrap;
   }
-  .story-list .desc {
-    font-size: 12px;
-    color: #999;
-    margin-bottom: 6px;
+  .story-item .dots {
+    flex: 1;
+    border-bottom: 1px dotted #c9c0e0;
+    margin: 0 8px;
+    transform: translateY(-4px);
   }
-  .story-list .date {
+  .story-item .date {
     font-size: 11px;
-    color: #666;
+    color: #8a80ab;
+    white-space: nowrap;
+  }
+  .story-item .desc {
+    font-size: 12px;
+    color: #8a80ab;
+    margin-top: 4px;
   }
   footer {
     text-align: center;
-    padding: 30px 20px;
-    font-size: 12px;
-    color: #666;
-    border-top: 1px solid #333;
+    margin-top: 50px;
+    font-size: 10px;
+    color: #a49bc4;
   }
 </style>
 </head>
 <body>
 
-<header>
-  <h1>ストーリー</h1>
-  <a class="back" href="../index.html">← トップに戻る</a>
-</header>
-
 <main>
-  <ul class="story-list">
-    <li>
-      <a href="001.html">
-        <div class="title">日常①</div>
-        <div class="desc">いつもの光景</div>
-        <div class="date">2026.09.04</div>
-      </a>
-    </li>
-    <!-- 増やすときはこのliをコピーして使う -->
-  </ul>
+
+  <a class="back" href="../index.html">&larr; いざよいのいざない</a>
+
+  <div class="page-title">夜話</div>
+
+  <div class="story-list">
+
+    <a class="story-item" href="001.html">
+      <div class="row">
+        <span class="title">日常①</span>
+        <span class="dots"></span>
+        <span class="date">2026.09.04</span>
+      </div>
+      <div class="desc">草に埋もれたモロウと、いつもの店の午後。</div>
+    </a>
+    <!-- 増やすときはこのaタグをコピーして使う -->
+
+  </div>
+
 </main>
 
-<footer>
-  &copy; 2026 Erinome
-</footer>
+<footer>&copy; 2026 Erinome</footer>
 
 </body>
 </html>
